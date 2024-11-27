@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    background-color: #b3b3b3d5;
+    ;
+    /*width: 100%;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    opacity: 0.8;
+    margin: 0;
+    position: fixed;
+    z-index: 0;*/
+}
+
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu a {
+    color: white;
+    background-color: rgb(74, 74, 74);
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    transition: 0.2s;
+    text-align: center;
+    padding: 0 0.4cm;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #9b9b9b;
+}
+
+#menu a:hover {
+    font-weight: bold;
+    box-shadow: 1px 3px 5px #9b9b9b;
+}
+
+#logo img {
+    max-width: 60px;
+    /* Tamanho máximo do logo */
+    height: 60px;
+    /* Mantém a proporção da imagem */
+}
+
+#logo img:hover {
+    box-shadow: 0px 5px 5px #999999
+}
+
+#header {
+    box-sizing: border-box;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #b36c5c;
+    box-shadow: 3px 3px 6px #ababab;
+    top: 0;
+
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.8rem;
+    /* unidade de medida relativa que varia de acordo com a dimensão do navegador ou dispositivo, por padrão, 1 rem = 16px*/
+    /* gap >define o espaçamento entre linhas e colunas de um flexbox*/
+    z-index: 1000;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+#carouselExampleInterval {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    /* Garante que o carrossel esteja acima de outos elementos */
+    margin-top: 10px;
+
+}
+
+.carousel-item img {
+    max-height: 700px;
+    width: 40%;
+
+}
+
+#logo-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape {
+    padding: 15px;
+    background: #b36c5c;
+
+    box-shadow: 1px 1px 10px 1px rgba(143, 143, 143, 1);
+}
+
+.linkFooter {
+    color: white;
+    text-decoration: none;
+}
+
+.linkFooter:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.info-contato p,
+.direitos {
+    color: white;
+}
+
+/* Ajusta o contêiner do carousel para ocupar 100% da altura da tela */
+/*.carousel-inner {
+    height: 100vh; /* Define a altura do carousel para 100% da altura da janela 
+}*/
+
+/*/* Ajusta as imagens para ocupar toda a largura e altura do carousel */
+/*.carousel-inner img {
+    width: 100%;  Ajusta a largura para 100% do contêiner */
+/* height: 100vh; Ajusta a altura para 100% da janela, garantindo que não haverá rolagem */
+/* object-fit: cover;  Garante que a imagem cubra o espaço sem distorção, mas pode cortar bordas 
+}*/
