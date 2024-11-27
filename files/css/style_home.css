@@ -205,14 +205,29 @@ ul {
     }
 }
 
-/* Ajusta o contêiner do carousel para ocupar 100% da altura da tela */
-/*.carousel-inner {
-    height: 100vh; /* Define a altura do carousel para 100% da altura da janela 
-}*/
+.whatsapp .pulse {
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    margin-bottom: 20px;
 
-/*/* Ajusta as imagens para ocupar toda a largura e altura do carousel */
-/*.carousel-inner img {
-    width: 100%;  Ajusta a largura para 100% do contêiner */
-/* height: 100vh; Ajusta a altura para 100% da janela, garantindo que não haverá rolagem */
-/* object-fit: cover;  Garante que a imagem cubra o espaço sem distorção, mas pode cortar bordas 
-}*/
+    animation-direction: normal;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

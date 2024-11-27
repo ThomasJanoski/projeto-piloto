@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../files/css/style_home.css">
     <link rel="stylesheet" href="../files/bootstrap/css/bootstrap.min.css">
 
@@ -11,7 +12,6 @@
 </head>
 
 <body>
-
     <!-- Ínicio Menu -->
 
     <header id="header">
@@ -32,7 +32,7 @@
     </header>
     <!-- Início Carousel Página Home -->
     <div class="container">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" data-bs-interval="1500">
                     <img src="../files/img/Lontra1.png" class="d-block w-100" alt="Lontra 1">
@@ -56,17 +56,13 @@
 
             </div>
             <!-- Início controle carousel -->
-            <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
-                data-bs-slide="prev" style="background: black;">
+            <button class="carousel-control-prev" data-target="#carouselExampleInterval" type="button" data-slide="prev"
+                style="background: black; width: 5%;">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-
             </button>
-            <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
-                data-bs-slide="next" style="background: black;">
+            <button class="carousel-control-next" data-target="#carouselExampleInterval" type="button" data-slide="next"
+                style="background: black; width: 5%;">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-
             </button>
             <!-- Fim controle do Carousel -->
         </div>
@@ -316,7 +312,8 @@
 </body>
 <!-- Importação do scrip do Bootstarp para funcionalidade -->
 
-<script type="text/javascript" src="../files/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../files/js/menu.js"></script>
+<script type="text/javascript" src="files/bootstrap/js/jquery.js"></script>
+<script type="text/javascript" src="../files/bootstrap/js/bootstrap.min.js"></script>
 
 </html>
